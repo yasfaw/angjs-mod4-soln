@@ -1,0 +1,9 @@
+<ul>
+  <li ng-repeat="item in $ctrl.items"
+      ng-click="$ctrl.selected($index)"
+      ng-class="{yellow : $index == $ctrl.row}"
+      ui-sref="categories.items({categoryShortName: item.short_name})">
+     {{ item.name }}
+
+  </li>
+</ul>
